@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
+:root {
+    /* ## Colors
+    ### Primary */
+    --Pink: hsl(322, 100%, 66%);
+    /* ### Neutral */
+    --Very-Pale-Cyan: hsl(193, 100%, 96%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Grayish-Blue: hsl(208, 11%, 55%);
+}
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(243, 242, 242);
+    font-size: 18px;
+    font-family: "Open Sans", "Poppins";
+}
+.wrapper{
+    max-width: 375px;
+    background-color: white;
+    color: var(--Very-Dark-Cyan);
+}
+.pagetop{
+    background-color: var(--Very-Pale-Cyan);
+    color: var(--Very-Dark-Cyan);
+}
+.pagebottom{
+    background-color: white;
+    padding: 0 1rem 0 1rem;
+    color: var(--Very-Dark-Cyan);
+}
+img{
+    max-width: 100%;
+}
+button {
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 12px;
+}
+.header{
+    position: relative;
+    padding: 1.5rem 1rem 3rem 1rem;
+}
+.header img {
+    width: 30%;
+}
+.header button {
+    color: var(--Very-Dark-Cyan);
+    position: absolute;
+    right: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+    border: none;
+    padding: 0.3rem 1.5rem 0.3rem 1.5rem;
+    box-shadow: 0 0 1px 0 var(--Grayish-Blue);
+}
+.subheader{
+    text-align: center;
+    padding: 0 2.2rem 2rem 2.2rem;
+    margin-bottom: 2rem;
+}
+.subheader h1{
+    font-size: 26px;
+    line-height: 1.5;
+}
+.subheader p{
+    font-size: 16px;
+    padding: 1rem 0 1rem 0;
+}
+.subheader button, .readytobuild button{
+    color: white;
+    width: 80%;
+    background-color: var(--Pink);
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 0 1rem 0;
+    margin: 1rem 0 3rem 0;
+}
+.options{
+    text-align: center;
+    position: relative;
+    margin-bottom: 15rem;
+}
+.option{
+    border-radius: 10px;
+    padding: 3rem 3.65rem 1.5rem 3.65rem;
+    box-shadow: 0 0 10px 0 hsl(0, 0%, 89%);
+    margin-bottom: 2.5rem;
+}
+.option h2{
+    font-size: 20px;
+    margin: 2rem 0 1rem 0;
+}
+.option p{
+    color: var(--Grayish-Blue);
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+.readytobuild{
+    border-radius: 10px;
+    padding: 3rem 1rem 3rem 1rem;
+    font-weight: 700;
+    box-shadow: 0 0 10px 0 hsl(0, 0%, 89%);
+    margin-bottom: 2.5rem;
+    background-color: white;
+    position: absolute;
+    bottom: -22rem;
+    right:0%;
+}
+.readytobuild button{
+    width: 70%;
+    margin: 1rem 0 0 0;
+}
+.footer{
+    background-color: var(--Very-Dark-Cyan);
+    color: var(--Very-Pale-Cyan);
+    padding: 10rem 1rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    font-size: 14px;
+}
+.footer a{
+    color: inherit;
+    text-decoration: none;
+}
+.footer>*{
+    width: 100%;
+    margin-bottom: 1rem;;
+}
+.footeritem{
+    display:grid;
+    grid-template-columns: 1fr 8fr;
+    justify-self: start;
+    line-height: 1.5;
+    letter-spacing: 0.8px;
+}
+.footeritem:nth-child(4){
+    margin-bottom: 3rem;
+}
+.footeritem p{
+    width: 100%;
+}
+.footerlogo{
+    filter: brightness(0) invert(1);
+    max-width: 10rem;
+    width: 100%;
+    grid-column: 1 / 3;
+}
+.copyrights {
+    font-size: 10px;
+    text-align: center;
+}
+.copyrighticons {
+    display: flex;
+}
+ion-icon {
+    font-size: 32px;
+    padding: 0.5rem;
+}
+.copyrighticons>*{
+    border-radius: 50%;
+    width: 10%;
+    grid-column: 2 / 3;
+}
+button:hover{
+    filter: brightness(150%);
+    cursor: pointer;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+@media (min-width: 900px) {
+    .wrapper{
+        width: auto;
+        max-width: 1440px;
+    }
+    img {
+        max-width: 50%;
+    }
+    .readytobuild{
+        right:25%;
+    }
+}
